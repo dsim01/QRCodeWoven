@@ -1,18 +1,27 @@
 {
   "name": "qr-code-woven",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "vite",
-    "build": "",
-    "publish": ""
-  },
-  "keywords": [],
   "author": "dsim01",
   "license": "MIT",
-  "dependencies": {},
+  "version": "0.1.0",
+  "description": "QrCodeWoven is a library that facilitates QR code generation using the QRious library.",
+  "main": "build/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite -c vite-dev.config.js",
+    "build": "vite build -c vite.config.js"
+  },
+  "keywords": [
+    "qr",
+    "code",
+    "qrious",
+    "react",
+    "nextjs"
+  ],
+  "dependencies": {
+    "qrious": "^4.0.2"
+  },
   "devDependencies": {
+    "@types/node": "^20.11.30",
     "@vitejs/plugin-react": "^4.2.1",
     "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.34.1",
