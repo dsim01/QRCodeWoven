@@ -6,19 +6,26 @@ jobs:
   build-publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v3
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
         with:
           version: 8
           run_install: false
           standalone: true
           dest: ~/setup-pnpm
-      - run: pnpm install
-      - run: pnpm run build
-      - uses: actions/setup-node@v4
+      - name: Install node
+        uses: actions/setup-node@v4
         with:
           node-version: '20.x'
+          cache: pnpm
           registry-url: 'https://registry.npmjs.org'
-      - run: pnpm publish
+      - name: Install dependencies
+        run: pnpm install
+      - name: Build library
+        run: pnpm run build
+      - name: Publish library
+        run: pnpm publish --access public --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
