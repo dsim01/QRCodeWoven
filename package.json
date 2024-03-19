@@ -5,9 +5,6 @@
   "version": "0.1.0",
   "description": "QrCodeWoven is a library that facilitates qr code generation in react/next.js using the qrious library.",
   "type": "module",
-  "publishConfig": {
-    "access": "restricted"
-  },
   "files": [
     "build"
   ],
