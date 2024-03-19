@@ -16,9 +16,6 @@ changelog:
     - title: 📘 Documentation
       labels:
         - doc
-    - title: 🧭 Dependencies
-      labels:
-        - dependencies
     - title: 🤘 Other Changes
       labels:
         - "*"
