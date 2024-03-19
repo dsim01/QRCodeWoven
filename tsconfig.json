@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "CommonJS",
+    "moduleResolution": "Bundler",
+    "lib": ["DOM", "DOM.Iterable"],
+    "esModuleInterop": true,
+    "jsx": "react",
+
+    "strict": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@lib/*": ["lib/*"],
+      "@src/*": ["src/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}
