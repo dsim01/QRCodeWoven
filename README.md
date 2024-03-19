@@ -73,10 +73,3 @@ The QrCodeWoven component accepts the following props:
   - `size` (Number): The size of the QR code in pixels. Defaults to 100.
 
 For more detailed information on the options, refer to the [QRious API reference](https://github.com/neocotic/qrious?tab=readme-ov-file#api).
-
-## License
-
-See [LICENSE.md](./LICENSE.md) for more information on our MIT license.
-
-This project uses a library called `qrious` licensed under the GNU GPLv3.
-For more information, follow the link: https://github.com/neocotic/qrious.
