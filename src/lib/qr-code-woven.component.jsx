@@ -19,7 +19,11 @@ import CanvasComponent from './components/canvas.component.jsx';
  * @param {number?} props.options.padding - Padding for the QR code (pixels). Default: null (automatic sets paddings)
  * @param {number?} props.options.size - Size of the QR code (pixels). Default: 100
  */
-export default function QrCodeWoven({ value, type = 'canvas', options }) {
+export default function QrCodeWovenComponent({
+  value,
+  type = 'canvas',
+  options,
+}) {
   const qrRef = createRef();
 
   useEffect(() => {

@@ -9,7 +9,7 @@ const root = ReactDom.createRoot(container);
 root.render(
   <QrCodeWoven
     type='canvas'
-    value={'https://rozetka.com.ua'}
+    value={'https://test.test'}
     options={{
       level: 'Q',
       size: 500,

@@ -3,9 +3,19 @@
   "author": "dsim01",
   "license": "MIT",
   "version": "0.1.0",
-  "description": "QrCodeWoven is a library that facilitates QR code generation using the QRious library.",
-  "main": "build/index.js",
+  "description": "QrCodeWoven is a library that facilitates qr code generation in react/next.js using the qrious library.",
   "type": "module",
+  "files": [
+    "build"
+  ],
+  "main": "./build/index.umd.js",
+  "module": "./build/index.es.js",
+  "exports": {
+    ".": {
+      "import": "./build/index.es.js",
+      "require": "./build/index.umd.js"
+    }
+  },
   "scripts": {
     "dev": "vite -c vite-dev.config.js",
     "build": "vite build -c vite.config.js"
@@ -18,18 +28,19 @@
     "nextjs"
   ],
   "dependencies": {
-    "qrious": "^4.0.2"
+    "qrious": "4.0.2"
   },
   "devDependencies": {
-    "@types/node": "^20.11.30",
-    "@vitejs/plugin-react": "^4.2.1",
-    "eslint": "^8.57.0",
-    "eslint-plugin-react": "^7.34.1",
-    "prettier": "^3.2.5",
-    "vite": "^5.1.6"
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "@types/node": "20.11.30",
+    "@vitejs/plugin-react": "4.2.1",
+    "eslint": "8.57.0",
+    "eslint-plugin-react": "7.34.1",
+    "prettier": "3.2.5",
+    "vite": "5.1.6"
   },
   "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "17.x.x || 18.x.x"
   }
 }
