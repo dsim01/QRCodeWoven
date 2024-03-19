@@ -2,7 +2,7 @@
   "name": "qr-code-woven",
   "author": "dsim01",
   "license": "MIT",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "QrCodeWoven is a library that facilitates qr code generation in react/next.js using the qrious library.",
   "type": "module",
   "files": [
@@ -10,6 +10,7 @@
   ],
   "main": "./build/index.umd.js",
   "module": "./build/index.es.js",
+  "types": "./build/declarations.d.ts",
   "exports": {
     ".": {
       "import": "./build/index.es.js",
@@ -17,8 +18,8 @@
     }
   },
   "scripts": {
-    "dev": "vite -c vite-dev.config.js",
-    "build": "vite build -c vite.config.js"
+    "dev": "vite -c vite-dev.config.ts",
+    "build": "vite build -c vite.config.ts"
   },
   "keywords": [
     "qr",
@@ -31,14 +32,21 @@
     "qrious": "4.0.2"
   },
   "devDependencies": {
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
     "@types/node": "20.11.30",
+    "@types/react": "^18.2.67",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.3.1",
     "@vitejs/plugin-react": "4.2.1",
     "eslint": "8.57.0",
     "eslint-plugin-react": "7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "3.2.5",
-    "vite": "5.1.6"
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "vite": "5.1.6",
+    "vite-plugin-dts": "^3.7.3",
+    "vite-tsconfig-paths": "^4.3.2"
   },
   "peerDependencies": {
     "react": "17.x.x || 18.x.x"
