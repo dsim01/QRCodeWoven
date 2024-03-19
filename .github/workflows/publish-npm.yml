@@ -25,6 +25,8 @@ jobs:
         run: pnpm install
       - name: Build library
         run: pnpm run build
+      - name: Set lib version
+        run: pnpm version ${{ github.ref_name }}
       - name: Publish library
         run: pnpm publish --access public --no-git-checks
         env:
