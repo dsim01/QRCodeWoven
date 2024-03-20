@@ -3,6 +3,14 @@
   "author": "dsim01",
   "license": "MIT",
   "description": "QrCodeWoven is a library that facilitates qr code generation in react/next.js using the qrious library.",
+  "bugs": {
+    "url": "https://github.com/dsim01/QRCodeWoven/issues",
+    "email": "defame_garlic985@simplelogin.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dsim01/QRCodeWoven"
+  },
   "type": "module",
   "files": [
     "build"
